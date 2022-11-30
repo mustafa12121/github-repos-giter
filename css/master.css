@@ -1,0 +1,70 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans";
+}
+.container {
+  margin: 100px auto 10px;
+}
+.container,
+.result {
+  margin: 10px auto;
+  width: 90%;
+  padding: 15px 20px;
+  background-color: #eee;
+  display: flex;
+  gap: 10px;
+}
+.container input {
+  border: none;
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  font-family: "Open Sans";
+  caret-color: #009855;
+}
+.container input:focus {
+  outline: 2px solid #009545;
+}
+.container button {
+  padding: 5px 15px;
+  font-weight: bold;
+  background-color: #009855;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.result {
+  flex-direction: column;
+}
+
+.result .repo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #009545;
+  color: white;
+}
+
+.result .repo .repo-name {
+  display: flex;
+  width: 30%;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.result .repo .repo-name a {
+  color: #171717;
+  text-decoration: none;
+}
+.result .repo .info {
+  padding: 10px 15px;
+}
+
+.error {
+  color: #009545;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
